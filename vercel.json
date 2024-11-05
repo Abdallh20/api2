@@ -1,12 +1,8 @@
 {
-    "builds": [{
-        "src": "/",
-        "dest": "/"
-    }],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/rest",
-            "dest": "/"
+            "source": "/(.*)",
+            "destination": "/rest"
         }
     ]
 }
